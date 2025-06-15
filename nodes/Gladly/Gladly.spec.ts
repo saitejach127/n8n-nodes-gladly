@@ -1,4 +1,4 @@
-import {Gladly} from "./Petstore.node";
+import {Gladly} from "./Gladly.node";
 
 test("smoke", () => {
     const node = new Gladly()
