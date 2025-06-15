@@ -6,23 +6,23 @@ const config: N8NPropertiesBuilderConfig = {}
 const parser = new N8NPropertiesBuilder(doc, config);
 const properties = parser.build()
 
-export class Petstore implements INodeType {
+export class Gladly implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Petstore',
-        name: 'petstore',
+        displayName: 'Gladly',
+        name: 'gladly',
         icon: 'file:logo.svg',
         group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-        description: 'Interact with Petstore API',
+        description: 'Interact with Gladly API',
         defaults: {
-            name: 'Petstore',
+            name: 'Gladly',
         },
         inputs: ['main'],
         outputs: ['main'],
         credentials: [
             {
-                name: 'petstoreApi',
+                name: 'gladlyApi',
                 required: false,
             },
         ],
